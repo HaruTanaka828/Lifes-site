@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+@import 'font-awesome-sprockets';
+@import "font-awesome";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+header{
+	height: 60px;
+}
+.header-list{
+	float: right;
+	line-height: 60px;
+}
+.Editlink{
+	margin-left: 20px;
+}
+.Editlink:link, .Editlink:visited, .Editlink:active{
+	color:black;
+	text-decoration: none;
+}
+.Editlink:hover{
+	color:rgba(0,0,0,0.7);
+}
