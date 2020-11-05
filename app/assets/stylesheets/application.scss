@@ -17,13 +17,23 @@
 @import "font-awesome";
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap');
+
+.center{
+	text-align: center;
+}
 
 header{
 	height: 60px;
+	width: 100%;
+	background-color: rgba(255,255,255,0.8);
+	position: fixed;
 }
 .header-list{
 	float: right;
 	line-height: 60px;
+	font-family: 'Noto Serif JP', serif;
 }
 .Editlink{
 	margin-left: 20px;
@@ -34,4 +44,35 @@ header{
 }
 .Editlink:hover{
 	color:rgba(0,0,0,0.7);
+}
+
+
+.top{
+	height:830px;
+	width:100%;
+	background-image: image-url('top.jpg');
+    background-size:cover;
+}
+.hope{
+	padding-top: 300px;
+	padding-left:330px;
+	color:white;
+}
+.hope-title{
+	font-size: 35px;
+	font-family: 'Noto Serif JP', serif;
+}
+.hope-sub{
+	font-size: 40px;
+	font-family: 'Nothing You Could Do', cursive;
+}
+.top-text{
+	margin-top: 70px;
+	font-family: 'Noto Serif JP', serif;
+}
+.top-text-title{
+	font-size: 35px;
+}
+.top-text-text{
+	font-size: 20px;
 }
