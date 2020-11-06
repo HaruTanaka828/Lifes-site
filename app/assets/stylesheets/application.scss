@@ -22,7 +22,7 @@
 
 body{
 	font-family: 'Noto Serif JP', serif;
-	min-height: 100vh;
+	width:100%;
 }
 
 .center{
@@ -39,14 +39,20 @@ header{
 	float: right;
 	line-height: 60px;
 }
-.Editlink{
+.Editlink1{
 	margin-left: 20px;
+	text-decoration: none;
+	color:black;
 }
-.Editlink:link, .Editlink:visited, .Editlink:active{
+.Editlink1:link, .Editlink:visited, .Editlink:active{
 	color:black;
 	text-decoration: none;
 }
-.Editlink:hover{
+.Editlink2:link, .Editlink:visited, .Editlink:active{
+	color:black;
+	text-decoration: none;
+}
+.Editlink1:hover{
 	color:rgba(0,0,0,0.7);
 }
 footer{
@@ -98,44 +104,61 @@ footer{
 	height:700px;
 	width:100%;
 }
+.business:link,.business:hover{
+	text-decoration: none;
+}
 .mobile{
 	height:350px;
 	width:50%;
-	background-image: image-url('mobile.jpg');
+	background-image: image-url('mobile2.jpg');
     background-size:cover;
     float:right;
+}
+.mobile:hover{
+	background-image: image-url('mobile.jpg');
+	text-decoration: none;
 }
 .event{
 	height:350px;
 	width:50%;
-	background-image: image-url('event.jpg');
+	background-image: image-url('event2.jpg');
     background-size:cover;
+}
+.event:hover{
+	background-image: image-url('event.jpg');
+    text-decoration: none;
 }
 .youtube{
 	height:350px;
 	width:50%;
-	background-image: image-url('youtube.jpg');
+	background-image: image-url('youtube2.jpg');
     background-size:cover;
     float:right;
+}
+.youtube:hover{
+	background-image: image-url('youtube.jpg');
+	text-decoration: none;
 }
 .drone{
 	height:350px;
 	width:50%;
-	background-image: image-url('drone.jpg');
+	background-image: image-url('drone2.jpg');
     background-size:cover;
+}
+.drone:hover{
+	background-image: image-url('drone.jpg');
+	text-decoration: none;
 }
  .business-name{
  	padding-left: 30px;
 	padding-top: 50px;
-	font-family: 'Noto Serif JP', serif;
 	font-size: 30px;
 	color: black;
 	border-bottom: solid 1px rgba(0,0,0,0.2);
- }
-.business-name:hover{
-    font-size: 38px;
-    transition:0.25s all;
 }
+ .business-name:hover{
+	text-decoration: none;
+ }
 .news{
 	margin-top:50px;
 }
@@ -147,6 +170,43 @@ footer{
 	font-size: 17px;
 }
 
+
+.business-header{
+	background-image: image-url('business.jpg');
+    background-size:cover;
+    width:100%;
+    height:30vh;
+}
+.company-header{
+	background-image: image-url('company.jpg');
+    background-size:cover;
+    width:100%;
+    height:30vh;
+}
+.recruit-header{
+	background-image: image-url('recruit.jpg');
+    background-size:cover;
+    width:100%;
+    height:30vh;
+}
+.contact-header{
+	background-image: image-url('contact.jpg');
+    background-size:cover;
+    width:100%;
+    height:30vh;
+}
+.header-title1{
+	text-align: center;
+	padding-top: 27vh;
+}
+.header-title2{
+	font-size:40px;
+	font-family: 'Nothing You Could Do', cursive;
+	font-weight: bold;
+}
+.header-title3{
+	font-size: 25px;
+}
 
 
 

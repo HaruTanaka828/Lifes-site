@@ -8,7 +8,11 @@ class HomesController < ApplicationController
 
   end
 
-  def details
+  def company
+
+  end
+
+  def recruit
 
   end
 

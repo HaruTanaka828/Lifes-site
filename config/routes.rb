@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
   get '/business' => 'homes#business'
 
-  get '/details' => 'homes#details'
+  get '/company' => 'homes#company'
+
+  get '/recruit' => 'homes#recruit'
 
   get '/contact' => 'homes#contact'
 

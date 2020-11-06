@@ -27,26 +27,26 @@
 </div>
 
 <div class="business">
-  <div class="mobile">
-  	<%= link_to business_path do %>
-    <p class="business-name">通信商材販売営業</p>
-    <% end %>
-  </div>
-  <div class="event">
-  	<%= link_to business_path do %>
-    <p class="business-name">イベントプロモーション</p>
-    <% end %>
-  </div>
-  <div class="youtube">
-  	<%= link_to business_path do %>
-    <p class="business-name">Youtubeチャンネル運営</p>
-    <% end %>
-  </div>
-  <div class="drone">
-  	<%= link_to business_path do %>
-    <p class="business-name">ドローン空撮</p>
-    <% end %>
-  </div>
+  <%= link_to business_path, class: "Editlink2" do %>
+    <div class="mobile">
+      <p class="business-name">通信商材販売営業</p>
+    </div>
+  <% end %>
+  <%= link_to business_path, class: "Editlink2" do %>
+  	<div class="event">
+      <p class="business-name">イベントプロモーション</p>
+    </div>
+  <% end %>
+  <%= link_to business_path, class: "Editlink2" do %>
+    <div class="youtube">
+      <p class="business-name">Youtubeチャンネル運営</p>
+    </div>
+  <% end %>
+  <%= link_to business_path, class: "Editlink2" do %>
+    <div class="drone">
+      <p class="business-name">ドローン空撮</p>
+    </div>
+  <% end %>
 </div>
 
 <div class="container">
