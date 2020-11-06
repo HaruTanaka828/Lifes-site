@@ -20,6 +20,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap');
 
+body{
+	font-family: 'Noto Serif JP', serif;
+	min-height: 100vh;
+}
+
 .center{
 	text-align: center;
 }
@@ -33,7 +38,6 @@ header{
 .header-list{
 	float: right;
 	line-height: 60px;
-	font-family: 'Noto Serif JP', serif;
 }
 .Editlink{
 	margin-left: 20px;
@@ -45,10 +49,26 @@ header{
 .Editlink:hover{
 	color:rgba(0,0,0,0.7);
 }
+footer{
+	height: 150px;
+	background-color: rgba(255,131,0,1);
+	color:white;
+	font-size: 15px;
+}
+.footer-title{
+	margin-top: 25px;
+}
+.footer-address{
+	float: left;
+}
+.footer-right{
+	margin-top: 15px;
+	float: right;
+}
 
 
 .top{
-	height:830px;
+	height:100vh;
 	width:100%;
 	background-image: image-url('top.jpg');
     background-size:cover;
@@ -60,15 +80,13 @@ header{
 }
 .hope-title{
 	font-size: 35px;
-	font-family: 'Noto Serif JP', serif;
 }
 .hope-sub{
 	font-size: 40px;
 	font-family: 'Nothing You Could Do', cursive;
 }
 .top-text{
-	margin-top: 70px;
-	font-family: 'Noto Serif JP', serif;
+	margin-top: 50px;
 }
 .top-text-title{
 	font-size: 35px;
@@ -76,3 +94,59 @@ header{
 .top-text-text{
 	font-size: 20px;
 }
+.business{
+	height:700px;
+	width:100%;
+}
+.mobile{
+	height:350px;
+	width:50%;
+	background-image: image-url('mobile.jpg');
+    background-size:cover;
+    float:right;
+}
+.event{
+	height:350px;
+	width:50%;
+	background-image: image-url('event.jpg');
+    background-size:cover;
+}
+.youtube{
+	height:350px;
+	width:50%;
+	background-image: image-url('youtube.jpg');
+    background-size:cover;
+    float:right;
+}
+.drone{
+	height:350px;
+	width:50%;
+	background-image: image-url('drone.jpg');
+    background-size:cover;
+}
+ .business-name{
+ 	padding-left: 30px;
+	padding-top: 50px;
+	font-family: 'Noto Serif JP', serif;
+	font-size: 30px;
+	color: black;
+	border-bottom: solid 1px rgba(0,0,0,0.2);
+ }
+.business-name:hover{
+    font-size: 38px;
+    transition:0.25s all;
+}
+.news{
+	margin-top:50px;
+}
+.news-title{
+	font-size: 35px;
+	text-align: center;
+}
+.news-body{
+	font-size: 17px;
+}
+
+
+
+
