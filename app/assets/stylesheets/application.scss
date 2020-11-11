@@ -25,10 +25,13 @@ body{
 	font-family: 'Noto Serif JP', serif;
 	width:100%;
 }
-
 .center{
 	text-align: center;
 }
+
+
+
+
 
 header{
 	height: 60px;
@@ -72,6 +75,9 @@ footer{
 	margin-top: 15px;
 	float: right;
 }
+
+
+
 
 
 .top{
@@ -172,17 +178,22 @@ footer{
 }
 
 
+
+
+
 .business-header{
 	background-image: image-url('business.jpg');
     background-size:cover;
     width:100%;
     height:30vh;
+    margin-bottom: 20vh;
 }
 .company-header{
 	background-image: image-url('company.jpg');
     background-size:cover;
     width:100%;
     height:30vh;
+    margin-bottom: 20vh;
 }
 .recruit-header{
 	background-image: image-url('recruit.jpg');
@@ -210,4 +221,95 @@ footer{
 }
 
 
+
+
+
+.businesslist{
+	height:50vh;
+	width: 100%;
+}
+.businesslist-head{
+	font-size: 28px;
+}
+.businesslist-text{
+	font-size: 16px;
+}
+.eventtext{
+	background-color:rgba(255,250,250,0.9);
+	width: 62%;
+	padding: 5vh;
+    margin-top: 15vh;
+	float: left;
+}
+.eventimage{
+	background-image: image-url('event3.jpg');
+	background-size: cover;
+	margin-left: 50vh;
+	height:50vh;
+	width: 70%;
+}
+.mobiletext{
+	background-color:rgba(255,250,250,0.9);
+	width: 62%;
+	padding: 7vh;
+    margin-top: 15vh;
+	float: right;
+}
+.mobileimage{
+	background-image: image-url('mobile3.jpg');
+	background-size: cover;
+	height:50vh;
+	width: 70%;
+}
+.dronetext{
+	background-color:rgba(255,250,250,0.9);
+	width: 62%;
+	padding: 5vh;
+    margin-top: 18vh;
+	float: left;
+}
+.droneimage{
+	background-image: image-url('drone3.jpg');
+	background-size: cover;
+	margin-left: 50vh;
+	height:50vh;
+	width: 70%;
+}
+.youtubetext{
+	background-color:rgba(255,250,250,0.9);
+	width: 62%;
+	padding: 7vh;
+    margin-top: 8vh;
+	float: right;
+}
+.youtubeimage{
+	background-image: image-url('youtube3.jpg');
+	background-size: cover;
+	height:50vh;
+	width: 70%;
+}
+
+
+
+
+
+.companyhead{
+	font-size: 15px;
+}
+.ceo{
+	height:40vh;
+	margin-left: 25vh;
+}
+.ceoimage{
+    background-image: image-url('ceo.jpg');
+    background-size: cover;
+    height:35vh;
+    width:25vh;
+    float:left;
+
+}
+.ceoname{
+	padding-top: 15vh;
+	font-size: 20px;
+}
 
