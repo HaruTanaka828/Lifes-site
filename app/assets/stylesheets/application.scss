@@ -294,22 +294,22 @@ footer{
 
 
 .companyhead{
-	font-size: 15px;
+	font-size: 18px;
 }
 .ceo{
-	height:40vh;
+	height:35vh;
 	margin-left: 25vh;
+	display: flex;
 }
 .ceoimage{
     background-image: image-url('ceo.jpg');
     background-size: cover;
     height:35vh;
     width:25vh;
-    float:left;
-
 }
 .ceoname{
-	padding-top: 15vh;
+	padding-top: 28vh;
 	font-size: 20px;
+    margin-left: 5vh;
 }
 
