@@ -19,7 +19,7 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
 
 body{
 	font-family: 'Noto Serif JP', serif;
@@ -200,12 +200,14 @@ footer{
     background-size:cover;
     width:100%;
     height:30vh;
+    margin-bottom: 20vh;
 }
 .contact-header{
 	background-image: image-url('contact.jpg');
     background-size:cover;
     width:100%;
     height:30vh;
+    margin-bottom: 20vh;
 }
 .header-title1{
 	text-align: center;
@@ -213,8 +215,7 @@ footer{
 }
 .header-title2{
 	font-size:45px;
-    font-family: 'Xanh Mono', monospace;
-	font-weight: bold;
+    font-family: 'Merriweather', serif;
 }
 .header-title3{
 	font-size: 25px;
@@ -293,7 +294,7 @@ footer{
 
 
 
-.companyhead{
+.headtext{
 	font-size: 18px;
 }
 .ceo{
@@ -312,4 +313,10 @@ footer{
 	font-size: 20px;
     margin-left: 5vh;
 }
+
+
+
+
+
+
 

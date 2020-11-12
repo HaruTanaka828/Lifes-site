@@ -1,23 +1,14 @@
 class HomesController < ApplicationController
 
-  def top
-
+  def  new
+    @contact = Contact.new(contact_params)
+    @contact.save
+    redirect_to contact_path
   end
 
-  def business
-
-  end
-
-  def company
-
-  end
-
-  def recruit
-
-  end
-
-  def contact
-
+  private
+    def  contact_params
+    params.require(:contact).permit(:name, :address, :genre, :body)
   end
 
 end

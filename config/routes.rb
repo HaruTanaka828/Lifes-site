@@ -10,4 +10,6 @@ Rails.application.routes.draw do
 
   get '/contact' => 'homes#contact'
 
+  post '/contact' => 'homes#new'
+
 end
