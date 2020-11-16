@@ -1,24 +1,15 @@
-# README
+# Lifes.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+実在する株式会社Lifes.のサンプル企業サイトです。
 
-Things you may want to cover:
+COSS_appの企業サイト部分のデザインが自分的に微妙だったので、フロントエンドに注力して作成し直しました。
 
-* Ruby version
+RAILS・HTML・CSS・Bootstrap以外の知識がまだまだ使用できていないのでレスポンシブ対応やJavascriptの
 
-* System dependencies
+機能を今後追加していく予定です。
 
-* Configuration
+NEWS欄、募集要項に記載している内容はダミー、その他の企業情報は正しい情報で、全て使用許可を頂いています。
 
-* Database creation
+画像に関してはクレジット表記不要のフリー素材を使用しています。
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
