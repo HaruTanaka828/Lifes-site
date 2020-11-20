@@ -14,60 +14,37 @@
 </div><br>
 
 <div class="container"><hr>
-<div class="row">
+  <div class="row">
+      <h4>募集要項<span>(<%= Date.current.strftime('%Y年%m月%d日')%>現在)</span></h4><br><br>
+      <% if @recruitments.each do |recruitment| %>
+        <div class="col-xs-6"><div class="vh">
+          <h4><%= simple_format(recruitment.genre) %></h4><br>
+          <table class="table table-striped">
+            <tr>
+              <th class="col-xs-3">業務内容</th>
+              <td><%= simple_format(recruitment.body) %></td>
+            </tr>
+            <tr>
+              <th>就業時間</th>
+              <td><%= simple_format(recruitment.time) %></td>
+            </tr>
+            <tr>
+              <th>給与</th>
+              <td><%= simple_format(recruitment.salary) %></td>
+            </tr>
+            <tr>
+              <th>歓迎</th>
+              <td><%= simple_format(recruitment.welcome) %></td>
+            </tr>
+            <tr>
+              <th>備考</th>
+              <td><%= simple_format(recruitment.etc) %></td>
+            </tr>
+          </table>
+        </div></div>
+      <% end.empty? %>
+        <div class="center"><h4>現在応募は行っていません。</h4></div><br>
+      <% end %>
+  </div><hr><br>
 
-    <h4>募集要項<span>(<%= Date.current.strftime('%Y年%m月%d日')%>現在)</span></h4><br><br>
-
-  <div class="col-xs-6">
-  	<h4>正社員</h4><br>
-    <table class="table">
-      <tr>
-        <th class="col-xs-3">業務内容</th>
-        <td>通信商材営業・新事業開拓</td>
-      </tr>
-      <tr>
-        <th>契約期間</th>
-        <td>期間の定めなし</td>
-      </tr>
-      <tr>
-        <th>就業時間</th>
-        <td>土・日・祝＋平日3日(週休２日・シフト制)<br>10:00~18:00・11:00~19:00</td>
-      </tr>
-      <tr>
-        <th>給与</th>
-        <td>月給○○円〜(昇給・インセンティブ有り)</td>
-      </tr>
-      <tr>
-        <th>歓迎</th>
-        <td>長期就労して頂ける方・営業経験のある方<br>弊社社員やクライアント様に対し、積極的にコミュニケーションを図れる方</td>
-      </tr>
-    </table><br>
-  </div>
-  <div class="col-xs-6">
-  	<h4>アルバイト</h4><br>
-    <table class="table">
-      <tr>
-        <th class="col-xs-3">業務内容</th>
-        <td>イベントスタッフ</td>
-      </tr>
-      <tr>
-        <th>契約期間</th>
-        <td>期間の定めなし</td>
-      </tr>
-      <tr>
-        <th>就業時間</th>
-        <td>土・日・祝(シフト制)10:00~18:00・11:00~19:00</td>
-      </tr>
-      <tr>
-        <th>給与</th>
-        <td>日当○○円〜(昇給有り)</td>
-      </tr>
-      <tr>
-        <th>歓迎</th>
-        <td>長期就労して頂ける方・繁忙期に出勤できる方</td>
-      </tr>
-    </table>
-  </div>
-
-</div><hr><br><br>
 </div>

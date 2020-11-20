@@ -9,8 +9,19 @@
   </head>
 
   <body>
+  <div class="body">
 
 <header>
+<% if admin_signed_in? %>
+  <div class="container">
+      <img alt="ロゴ画像" src="<%= asset_path "lifes.png" %>" style="height: 35px; margin-top:10px; margin-bottom: 10px;">
+    <div class="header-list">
+      <%= link_to "NEWS", new_newss_path, class: "Editlink1"%>
+      <%= link_to "募集要項", new_recruitment_path, class: "Editlink1" %>
+      <%= link_to "ログアウト", destroy_admin_session_path, method: :delete, class: "Editlink1" %>
+    </div>
+  </div>
+<% else %>
   <div class="container">
     <%= link_to root_path do %>
       <img alt="ロゴ画像" src="<%= asset_path "lifes.png" %>" style="height: 35px; margin-top:10px; margin-bottom: 10px;">
@@ -22,9 +33,12 @@
       <%= link_to "お問い合わせ", contact_path, class: "Editlink1" %>
     </div>
   </div>
+<% end %>
 </header>
 
     <%= yield %>
+
+  </div>
 
 <footer>
   <div class="container">

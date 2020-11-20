@@ -1,0 +1,42 @@
+<div class="news-header">
+  <div class="header-title1">
+    <p class="header-title2">N E W S</p>
+    <p class="header-title3">新規投稿</p>
+  </div>
+</div>
+
+<div class ="container">
+  <div class="row">
+    <div class="col-xs-3">
+    </div>
+    <div class="col-xs-6">
+  	  <div class="center">
+        <%= form_with model:@news, url: newss_index_path do |f| %>
+        <p class="header-title3"><%= Date.current.strftime('%Y年%m月')%></p>
+        <div>
+  	    <%= f.text_area :body, placeholder: "投稿内容", class:'form-control', rows: 5, autofocus: true %>
+        </div><br>
+        <div><%= f.submit '新規投稿',class:"btn btn-success"%></div><br>
+        <% end %>
+      </div>
+    </div>
+  </div><hr>
+
+  <div class="col-xs-1">
+  </div>
+  <div class="col-xs-10">
+    <div class="center"><p class="header-title3">確認・削除</p></div><br>
+    <div class="news-body">
+    <table class="table">
+      <% @newss.each do |news| %>
+      <tr>
+        <th class="col-xs-2"><p></p><%= news.created_at.strftime('%Y年%m月%d日')%></th>
+        <td class="col-xs-8"><p></p><%= simple_format(news.body) %><p></p></td>
+        <td class="col-xs-2"><p></p><%= link_to '削除', newss_path(news),class: 'btn btn-danger', method: :delete, data: { confirm: "この記事を削除してよろしいですか？" } %><p></p></td>
+      </tr>
+      <% end %>
+    </table>
+      <div class="center"><%= paginate @newss %></div>
+    </div>
+  </div>
+</div>

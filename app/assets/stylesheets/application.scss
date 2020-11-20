@@ -25,12 +25,18 @@ body{
 	font-family: 'Noto Serif JP', serif;
 	width:100%;
 }
+.body{
+	min-height: 82vh;
+}
 .center{
 	text-align: center;
 }
-
-
-
+.right{
+	text-align: right;
+}
+.vh{
+	height:45vh;
+}
 
 
 header{
@@ -60,7 +66,7 @@ header{
 	color:rgba(0,0,0,0.7);
 }
 footer{
-	height: 150px;
+	height: 18vh;
 	background-color: rgba(255,131,0,1);
 	color:white;
 	font-size: 15px;
@@ -91,13 +97,10 @@ footer{
 	padding-left:32vh;
 	color:black;
 }
-.hope-title{
-	font-size: 42px;
-	padding-left: 10vh;
-}
 .hope-sub{
 	font-size: 43px;
 	font-family: 'Nothing You Could Do', cursive;
+	font-weight: bold;
 }
 .top-text{
 	margin-top: 50px;
@@ -209,6 +212,19 @@ footer{
     width:100%;
     height:30vh;
     margin-bottom: 20vh;
+}
+.news-header{
+	background-image: image-url('news.jpg');
+    background-size:cover;
+    width:100%;
+    height:30vh;
+    margin-bottom: 15vh;
+}
+.recruitment-header{
+	background-image: image-url('recruitment.jpg');
+    background-size:cover;
+    width:100%;
+    height:30vh;
 }
 .header-title1{
 	text-align: center;

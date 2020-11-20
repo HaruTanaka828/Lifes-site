@@ -1,0 +1,83 @@
+<div class="recruitment-header">
+  <div class="header-title1">
+    <p class="header-title2">R E C R U I T M E N T</p>
+    <p class="header-title3">新規作成</p>
+  </div>
+</div>
+
+<div class ="container">
+
+  <div class ="row">
+    <div class="col-xs-3">
+    </div>
+    <div class="col-xs-6">
+      <%= form_with model:@recruitment, url: recruitments_path do |f| %>
+  	  <table class="table">
+        <tr>
+          <th class="col-xs-3"><p>雇用形態</p></th>
+  	      <td><%= f.text_field :genre, placeholder: "(例)正社員・アルバイト", class:'form-control', autofocus: true %></td>
+        </tr><br>
+        <tr>
+  	      <th>業務内容</th>
+  	      <td><%= f.text_field :body, placeholder: "(例)通信商材営業・イベントプロモーション", class:'form-control' %></td>
+        </tr><br>
+        <tr>
+          <th>就業時間</th>
+  	      <td><%= f.text_area :time, placeholder: "(例)土・日・祝＋平日3日(週休２日・シフト制)", class:'form-control', rows: 2 %></td>
+        </tr><br>
+        <tr>
+          <th>給与</th>
+  	      <td><%= f.text_area :salary, placeholder: "(例)月給23万円〜(昇給・インセンティブ有り)", class:'form-control', rows: 2 %></td>
+        </tr><br>
+          <th>歓迎</th>
+  	      <td><%= f.text_area :welcome, placeholder: "(例)長期就労して頂ける方・営業経験のある方", class:'form-control', rows: 3, autofocus: true %></td>
+        </tr><br>
+        <tr>
+          <th>備考</th>
+  	      <td><%= f.text_area :etc, placeholder: "(例)見なし残業(10時間/月 以下程度)", class:'form-control', rows: 3 %></td>
+        </tr><br>
+      </table>
+      <div class="center"><%= f.submit '新規作成',class:"btn btn-success"%></div><br>
+      <% end %>
+    </div>
+  </div><hr>
+
+  <div class="row">
+    <div class="center"><p class="header-title3">確認・削除</p></div><br>
+      <h4>募集要項<span>(<%= Date.current.strftime('%Y年%m月%d日')%>現在)</span></h4><br><br>
+      <% if @recruitments.each do |recruitment| %>
+        <div class="col-xs-6"><div class="vh">
+  	      <h4><%= simple_format(recruitment.genre) %></h4><br>
+          <table class="table table-striped">
+            <tr>
+              <th class="col-xs-3">業務内容</th>
+              <td><%= simple_format(recruitment.body) %></td>
+            </tr>
+            <tr>
+              <th>就業時間</th>
+              <td><%= simple_format(recruitment.time) %></td>
+            </tr>
+            <tr>
+              <th>給与</th>
+              <td><%= simple_format(recruitment.salary) %></td>
+            </tr>
+            <tr>
+              <th>歓迎</th>
+              <td><%= simple_format(recruitment.welcome) %></td>
+            </tr>
+            <tr>
+              <th>備考</th>
+              <td><%= simple_format(recruitment.etc) %></td>
+            </tr>
+          </table>
+          <div class="right"><%= link_to 'この記事を削除', recruitment_path(recruitment),class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "この記事を削除してよろしいですか？" } %></div>
+        </div></div>
+      <% end.empty? %>
+        <div class="center"><h4>現在応募は行っていません。</h4></div><br>
+      <% end %>
+  </div><br><hr><br>
+
+</div>
+
+
+
