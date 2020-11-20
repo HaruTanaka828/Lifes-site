@@ -3,7 +3,15 @@
     <p class="header-title2">C O N T A C T</p>
     <p class="header-title3">お問い合わせ</p>
   </div>
+  <div class="center">
+    <% if flash[:success] %>
+      <div class="alert alert-success">
+        <%= flash[:success] %>
+      </div>
+    <% end %>
+  </div>
 </div>
+
 
 <div class="container">
 <div class="row">
@@ -21,7 +29,7 @@
 
   <%= form_with model:@contact, url: contact_path do |f| %>
     <div>
-  	  <%= f.select :genre, [["採用に関するお問い合わせ・応募", "採用に関するお問い合わせ・応募"], ["その他お問い合わせ", "その他お問い合わせ"]], :prompt => "お問い合わせ種別を選択" %>
+  	  <%= f.select :genre, [["採用に関するお問い合わせ", "採用に関するお問い合わせ"], ["その他お問い合わせ", "その他お問い合わせ"]], :prompt => "お問い合わせ種別を選択" %>
     </div><br><br>
     <div>
   	  <%= f.text_field :name, placeholder: "氏名または担当者名", class:'form-control' %>
@@ -32,7 +40,7 @@
     <div>
   	  <%= f.text_area :body, placeholder: "お問い合わせ内容", class:'form-control', rows: 5%>
     </div><br><br>
-    <div class="btn btn-primary">送信する</div>
+    <div><%= f.submit '送信する',class:"btn btn-success"%></div>
   <% end %>
 
 </div>
