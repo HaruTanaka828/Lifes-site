@@ -1,16 +1,16 @@
 <div class="top">
   <div class="hope">
-    <p class="hope-sub">Create People who give Hope</p>
+    <div class="container"><p class="hope-sub">Create People who give Hope</p></div>
   </div>
 </div>
 
 <div class="container">
-  <div class="col-xs-2">
+  <div class="col-sm-2">
   </div>
-  <div class="col-xs-8">
+  <div class="col-sm-8">
     <div class="top-text">
       <div class="center">
-	    <p class="top-text-title">希望を配る人を輩出する。</p><hr>
+	    <p class="top-text-title">希望を配る人を輩出する。</p><br><br>
         <div class="top-text-text">
           <p>リーダーとは“希望を配る人”。<br><br>
           	それは素晴らしい熱量を共有する。謙虚だが自信に溢れ、妥協がない。<br><br>
@@ -49,17 +49,17 @@
 </div>
 
 <div class="container">
-  <div class="col-xs-1">
+  <div class="col-sm-1">
   </div>
-  <div class="col-xs-10">
+  <div class="col-sm-10">
     <div class="news">
   	  <p class="news-title">News</p><br>
   	    <div class="news-body">
   	    <table class="table">
         <% @newss.each do |news| %>
         <tr>
-          <th class="col-xs-2"><p></p><%= news.created_at.strftime('%Y年%m月%d日')%></th>
-          <td class="col-xs-10"><p></p><%= simple_format(news.body) %><p></p></td>
+          <th class="col-sm-2"><p></p><%= news.created_at.strftime('%Y/%m/%d')%></th>
+          <td class="col-sm-10"><p></p><%= simple_format(news.body) %><p></p></td>
         </tr>
         <% end %>
         </table>

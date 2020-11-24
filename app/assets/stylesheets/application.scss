@@ -65,6 +65,10 @@ header{
 .Editlink1:hover{
 	color:rgba(0,0,0,0.7);
 }
+.Editlink3:link, .Editlink:visited, .Editlink:active{
+	color:black;
+	text-decoration: none;
+}
 footer{
 	height: 18vh;
 	background-color: rgba(255,131,0,1);
@@ -90,7 +94,8 @@ footer{
 	height:100vh;
 	width:100%;
 	background-image: image-url('top.jpg');
-    background-size:cover;
+	background-size: cover;
+    background-position: 50% 50%;
 }
 .hope{
 	padding-top: 35vh;
@@ -106,10 +111,10 @@ footer{
 	margin-top: 50px;
 }
 .top-text-title{
-	font-size: 35px;
+	font-size: 3vmax;
 }
 .top-text-text{
-	font-size: 20px;
+	font-size: 1.4vmax;
 }
 .business{
 	height:700px;
@@ -332,6 +337,299 @@ footer{
 }
 
 
+
+
+
+
+@media screen and (min-width:480px) {
+
+.header2{
+	font-size: 0px;
+	height: 0px;
+	width: 0px;
+	opacity: 0;
+}
+}
+
+@media screen and (max-width:480px) {
+
+
+header{
+	font-size: 0px;
+	position: absolute;
+}
+.header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background: rgba(255,255,255,0);
+  height:60px;
+  font-size: 30px;
+}
+
+.logo {
+  font-size: 24px;
+}
+.drawer-hidden {
+  display: none;
+}
+/* ハンバーガーアイコンの設置スペース */
+.drawer-open {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;/* 重なり順を一番上に */
+  cursor: pointer;
+  margin-top: 50px;
+}
+/* ハンバーガーメニューのアイコン */
+.drawer-open span,
+.drawer-open span:before,
+.drawer-open span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: #333;
+  transition: 0.5s;
+  position: absolute;
+}
+/* 三本線のうち一番上の棒の位置調整 */
+.drawer-open span:before {
+  bottom: 8px;
+}
+/* 三本線のうち一番下の棒の位置調整 */
+.drawer-open span:after {
+  top: 8px;
+}
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer-check:checked ~ .drawer-open span {
+  background: rgba(255, 255, 255, 0);
+}
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer-check:checked ~ .drawer-open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+#drawer-check:checked ~ .drawer-open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+/* メニューのデザイン*/
+.drawer-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;/* メニューを画面の外に飛ばす */
+  z-index: 99;
+  background: rgba(255,255,255,0.8);
+  transition: .5s;
+}
+/* アイコンがクリックされたらメニューを表示 */
+#drawer-check:checked ~ .drawer-content {
+  left: 0;/* メニューを画面に入れる */
+}
+ul {
+  list-style: none;
+}
+.Editlink3{
+  color: black;
+}
+.border{
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255,131,0,1);
+  border: 0;  /*デフォルトデザインでは線がある場合があるので、消しておく。*/
+}
+
+
+
+footer{
+	text-align: center;
+	height: 180px;
+	background-color: rgba(255,131,0,1);
+	color:white;
+	font-size: 15px;
+}
+.footer-title{
+	margin-top: 10;
+}
+.footer-address{
+	float: none;
+}
+.footer-right{
+	font-size: 10px;
+	margin-top: 0px;
+	float: none;
+}
+
+
+
+
+
+.top{
+	margin-top: -60px;
+}
+.hope{
+	padding-top: 25vh;
+	padding-left:0vh;
+	text-align: center;
+}
+.top-text{
+	height:0px;
+	margin-top: 0px;
+}
+.top-text-title{
+	font-size: 0px;
+}
+.top-text-text{
+	font-size: 0px;
+}
+.business{
+	height:120vh;
+	width:100%;
+}
+.mobile{
+	height:30vh;
+	width:100%;
+    float:none;
+}
+.event{
+	height:30vh;
+	width:100%;
+}
+.youtube{
+	height:30vh;
+	width:100%;
+    float:none;
+}
+.drone{
+	height:30vh;
+	width:100%;
+}
+ .business-name{
+ 	padding-left: 10px;
+	padding-top: 30px;
+	font-size: 25px;
+	color: black;
+	border-bottom: solid 1px rgba(0,0,0,0.2);
+}
+.news-body{
+	font-size: 13px;
+}
+
+
+
+
+
+.business-header{
+    background-position: 50% 50%;
+}
+.recruit-header{
+	background-position: 50% 50%;
+}
+.contact-header{
+	background-position: 70% 50%;
+}
+.header-title1{
+	text-align: center;
+	padding-top: 27vh;
+}
+.header-title2{
+	font-size:45px;
+    font-family: 'Merriweather', serif;
+}
+.header-title3{
+	font-size: 25px;
+}
+
+
+
+.businesslist{
+	height:50vh;
+	width: 100%;
+	text-align: center;
+
+
+}
+.businesslist-head{
+	font-size: 20px;
+}
+.businesslist-text{
+	font-size: 16px;
+
+}
+.eventtext{
+	background-image: image-url('event3.jpg');
+	background-size: cover;
+    background-position: 50% 50%;
+	width: 100%;
+	padding: 1vh;
+    margin-top: 0vh;
+	float: none;
+	height:40vh;
+
+
+}
+.eventimage{
+	background-image: none;
+	margin-left:0vh;
+	height:50vh;
+	width: 100%;
+}
+.mobiletext{
+	background-color:rgba(255,250,250,0.9);
+	width: 62%;
+	padding: 7vh;
+    margin-top: 15vh;
+	float: none;
+}
+.mobileimage{
+	background-image: image-url('mobile3.jpg');
+	background-size: cover;
+	height:50vh;
+	width: 70%;
+}
+.dronetext{
+	background-color:rgba(255,250,250,0.9);
+	width: 62%;
+	padding: 5vh;
+    margin-top: 18vh;
+	float: none;
+}
+.droneimage{
+	background-image: image-url('drone3.jpg');
+	background-size: cover;
+	margin-left: 50vh;
+	height:50vh;
+	width: 70%;
+}
+.youtubetext{
+	background-color:rgba(255,250,250,0.9);
+	width: 62%;
+	padding: 7vh;
+    margin-top: 8vh;
+	float: none;
+}
+.youtubeimage{
+	background-image: image-url('youtube3.jpg');
+	background-size: cover;
+	height:50vh;
+	width: 70%;
+}
+
+
+
+
+
+}
 
 
 

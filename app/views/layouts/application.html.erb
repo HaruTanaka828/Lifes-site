@@ -6,6 +6,7 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
   </head>
 
   <body>
@@ -24,8 +25,9 @@
 <% else %>
   <div class="container">
     <%= link_to root_path do %>
-      <img alt="ロゴ画像" src="<%= asset_path "lifes.png" %>" style="height: 35px; margin-top:10px; margin-bottom: 10px;">
+      <img alt="ロゴ画像" src="<%= asset_path "lifes.png" %>" style="height: 35px; margin-top:10px; margin-bottom: 10px; ">
     <% end %>
+
     <div class="header-list">
       <%= link_to "事業紹介", business_path, class: "Editlink1"%>
       <%= link_to "会社概要", company_path, class: "Editlink1" %>
@@ -35,6 +37,43 @@
   </div>
 <% end %>
 </header>
+
+
+<div class="header2">
+  <div class="logo"></div><!-- /.logo -->
+
+  <!-- ハンバーガーメニュー部分 -->
+  <div class="drawer">
+    <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+    <input type="checkbox" id="drawer-check" class="drawer-hidden" >
+
+    <!-- ハンバーガーアイコン -->
+    <label for="drawer-check" class="drawer-open"><span></span></label>
+
+    <!-- 追加：メニューを閉じるための要素 -->
+    <label for="drawer-check" class="drawer-close"></label>
+
+    <!-- メニュー -->
+    <nav class="drawer-content">
+      <ul class="drawer-list">
+        <li class="drawer-item">
+          <br><p class="menu">Menu</p>
+          <br><%= link_to "事業紹介", business_path, class: "Editlink3"%>
+        </li><hr class="border"><!-- /.drawer-item -->
+        <li class="drawer-item">
+          <%= link_to "会社概要", company_path, class: "Editlink3" %>
+        </li><hr class="border"><!-- /.drawer-item -->
+        <li class="drawer-item">
+          <%= link_to "採用情報", recruit_path, class: "Editlink3" %>
+        </li><hr class="border"><!-- /.drawer-item -->
+        <li class="drawer-item">
+          <%= link_to "お問い合わせ", contact_path, class: "Editlink3" %>
+        </li><hr class="border">
+      </ul><!-- /.drawer-list -->
+    </nav>
+
+  </div>
+</div>
 
     <%= yield %>
 
@@ -46,7 +85,7 @@
     <p class="footer-address">
     〒530-0043<br>
     大阪府大阪市北区天満2-8-17 天満橋パークビル4階<br>
-    06-7182-2493
+    TEL:06-7182-2493
     </p>
     <p class="footer-right">Copyright(c)株式会社Lifes.All rights reserved.</p>
   </div>
