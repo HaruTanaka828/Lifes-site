@@ -35,7 +35,7 @@ body{
 	text-align: right;
 }
 .vh{
-	height:45vh;
+	height: 100%;
 }
 
 
@@ -331,9 +331,19 @@ footer{
     width:25vh;
 }
 .ceoname{
-	padding-top: 28vh;
+	padding-top: 25vh;
 	font-size: 20px;
     margin-left: 5vh;
+}
+
+
+
+
+.thanks{
+	margin-top: 60px;
+	text-align: center;
+	position: fixed;
+	width: 100vw;
 }
 
 
@@ -348,6 +358,9 @@ footer{
 	height: 0px;
 	width: 0px;
 	opacity: 0;
+}
+.headtext2{
+	font-size: 0px;
 }
 }
 
@@ -365,7 +378,7 @@ header{
   padding: 0 20px;
   background: rgba(255,255,255,0);
   height:60px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .logo {
@@ -384,7 +397,7 @@ header{
   position: relative;
   z-index: 100;/* 重なり順を一番上に */
   cursor: pointer;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 /* ハンバーガーメニューのアイコン */
 .drawer-open span,
@@ -531,12 +544,18 @@ footer{
 
 .business-header{
     background-position: 50% 50%;
+	margin-bottom: 15vh;
+}
+.company-header{
+	margin-bottom: 15vh;
 }
 .recruit-header{
 	background-position: 50% 50%;
+	margin-bottom: 15vh;
 }
 .contact-header{
 	background-position: 70% 50%;
+	margin-bottom: 15vh;
 }
 .header-title1{
 	text-align: center;
@@ -624,6 +643,41 @@ footer{
 	height:50vh;
 	width: 70%;
 }
+
+
+
+
+
+.headtext{
+	font-size: 0px;
+}
+.headtext2{
+	font-size: 13px;
+}
+
+
+
+
+
+.ceo{
+	height:35vh;
+	margin-left: 0vh;
+	display: flex;
+}
+.ceoimage{
+    background-image: image-url('ceo.jpg');
+    background-size: cover;
+    height:35vh;
+    width:60vh;
+}
+.ceoname{
+	height: 35vh;
+	width: 40vh;
+	padding-top: 26vh;
+	font-size: 15px;
+    margin-left: 1vh;
+}
+
 
 
 

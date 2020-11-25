@@ -1,32 +1,39 @@
 <div class="contact-header">
+      <% if flash[:success] %>
+      <div class="thanks">
+        <div class="alert alert-success">
+          <%= flash[:success] %>
+        </div>
+      </div>
+    <% end %>
   <div class="header-title1">
     <p class="header-title2">C O N T A C T</p>
     <p class="header-title3">お問い合わせ</p>
   </div>
-  <div class="center">
-    <% if flash[:success] %>
-      <div class="alert alert-success">
-        <%= flash[:success] %>
-      </div>
-    <% end %>
-  </div>
+
 </div>
 
-
-<div class="container">
-<div class="row">
 <div class="center">
 
     <P class="headtext">
       お問い合わせ、採用応募の方は下記フォーマットに必要事項入力の上ご送信下さい。<br><br>
-      電話でのご対応も承ってますのでお気軽にお問い合わせ下さい<br><br>
-      電話番号：06-7182-2493(平日10:00-18:00)<br><br><hr><br>
+      電話でのご対応も承ってますのでお気軽にお問い合わせ下さい。<br><br>
+      電話番号：06-7182-2493(平日10:00-18:00)
     </P>
 
-<div class="col-xs-3">
-</div>
-<div class="col-xs-6">
+    <P class="headtext2">
+      お問い合わせ、採用応募の方は下記フォーマットに<br>
+      必要事項入力の上ご送信下さい。<br><br>
+      電話でのご対応も承ってますので<br>
+      お気軽にお問い合わせ下さい。<br><br>
+      電話番号：06-7182-2493(平日10:00-18:00)
+    </P>
 
+
+<div class="container"><hr><br>
+  <div class="col-sm-3">
+  </div>
+  <div class="col-sm-6">
   <%= form_with model:@contact, url: contact_path do |f| %>
     <div>
   	  <%= f.select :genre, [["採用に関するお問い合わせ", "採用に関するお問い合わせ"], ["その他お問い合わせ", "その他お問い合わせ"]], :prompt => "お問い合わせ種別を選択" %>
@@ -40,12 +47,9 @@
     <div>
   	  <%= f.text_area :body, placeholder: "お問い合わせ内容", class:'form-control', rows: 5%>
     </div><br><br>
-    <div><%= f.submit '送信する',class:"btn btn-success"%></div>
+    <div><%= f.submit '送信する',class:"btn btn-success"%></div><br><br>
   <% end %>
+  </div>
 
 </div>
-
-
-</div>
-</div><br><hr><br>
 </div>

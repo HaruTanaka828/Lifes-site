@@ -11,14 +11,22 @@
     営業の経験を積みたい方、新規事業開拓に興味のある方、お気軽にお問い合わせください。<br><br>
     応募の場合は、お電話、または<%= link_to "お問い合わせページ", contact_path %>よりご応募ください。
   </P>
+  <P class="headtext2">
+    弊社では一緒に活躍してくれる仲間を募集しています。<br><br>
+    営業の経験を積みたい方、新規事業開拓に興味のある方、<br>
+    お気軽にお問い合わせください。<br><br>
+    応募の場合はお電話、または<br>
+    <%= link_to "お問い合わせページ", contact_path %>よりご応募ください。
+  </P>
 </div><br>
 
+
 <div class="container"><hr>
-  <div class="row">
-      <h4>募集要項<span>(<%= Date.current.strftime('%Y年%m月%d日')%>現在)</span></h4><br><br>
+    <div class="center">
+      <h4>募集要項<span>(<%= Date.current.strftime('%Y年%m月%d日')%>現在)</span></h4>
+    </div><br><br>
       <% if @recruitments.each do |recruitment| %>
-        <div class="col-xs-6"><div class="vh">
-          <h4><%= simple_format(recruitment.genre) %></h4><br>
+        <h4><%= simple_format(recruitment.genre) %></h4><br>
           <table class="table table-striped">
             <tr>
               <th class="col-xs-3">業務内容</th>
@@ -40,11 +48,9 @@
               <th>備考</th>
               <td><%= simple_format(recruitment.etc) %></td>
             </tr>
-          </table>
-        </div></div>
+          </table><br>
       <% end.empty? %>
         <div class="center"><h4>現在応募は行っていません。</h4></div><br>
       <% end %>
-  </div><hr><br>
-
+  <hr><br>
 </div>
