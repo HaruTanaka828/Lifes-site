@@ -8,9 +8,9 @@
 <div class ="container">
 
   <div class ="row">
-    <div class="col-xs-3">
+    <div class="col-sm-2">
     </div>
-    <div class="col-xs-6">
+    <div class="col-sm-8">
       <%= form_with model:@recruitment, url: recruitments_path do |f| %>
   	  <table class="table">
         <tr>
@@ -42,11 +42,14 @@
     </div>
   </div><hr>
 
-  <div class="row">
-    <div class="center"><p class="header-title3">確認・削除</p></div><br>
+
+    <div class="center"><p class="header-title3">確認・削除</p><br>
       <h4>募集要項<span>(<%= Date.current.strftime('%Y年%m月%d日')%>現在)</span></h4><br><br>
+    </div>
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8">
       <% if @recruitments.each do |recruitment| %>
-        <div class="col-xs-6"><div class="vh">
   	      <h4><%= simple_format(recruitment.genre) %></h4><br>
           <table class="table table-striped">
             <tr>
@@ -71,13 +74,12 @@
             </tr>
           </table>
           <div class="right"><%= link_to 'この記事を削除', recruitment_path(recruitment),class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "この記事を削除してよろしいですか？" } %></div>
-        </div></div>
       <% end.empty? %>
         <div class="center"><h4>現在応募は行っていません。</h4></div><br>
       <% end %>
-  </div><br><hr><br>
+    </div>
 
-</div>
+</div><br><br>
 
 
 

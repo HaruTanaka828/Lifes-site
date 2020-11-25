@@ -25,6 +25,9 @@
     <div class="center">
       <h4>募集要項<span>(<%= Date.current.strftime('%Y年%m月%d日')%>現在)</span></h4>
     </div><br><br>
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8">
       <% if @recruitments.each do |recruitment| %>
         <h4><%= simple_format(recruitment.genre) %></h4><br>
           <table class="table table-striped">
@@ -52,5 +55,5 @@
       <% end.empty? %>
         <div class="center"><h4>現在応募は行っていません。</h4></div><br>
       <% end %>
-  <hr><br>
-</div>
+    </div>
+</div><br>

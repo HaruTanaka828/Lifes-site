@@ -4,7 +4,7 @@ class RecruitmentsController < ApplicationController
 
   def new
     @recruitment = Recruitment.new
-    @recruitments = Recruitment.all.reverse_order
+    @recruitments = Recruitment.all
   end
 
   def create
