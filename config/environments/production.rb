@@ -98,7 +98,8 @@ Rails.application.configure do
   #送信方法を指定（この他に:sendmail/:file/:testなどがあります)
   config.action_mailer.delivery_method = :smtp
 
-  config.action_mailer.delivery_method = :smtp
+
+
   config.action_mailer.smtp_settings = {
     address:              'smtp.gmail.com',
     port:                  587,
