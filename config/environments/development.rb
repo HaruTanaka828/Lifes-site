@@ -59,7 +59,15 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
+
+
+  #deviseが認証用のURLなどを生成するのに必要になる（らしい）
+  config.action_mailer.default_url_options = {  :host => 'https://lifes-inc.jp' }
+  #送信方法を指定（この他に:sendmail/:file/:testなどがあります)
   config.action_mailer.delivery_method = :smtp
+  #送信方法として:smtpを指定した場合は、このconfigを使って送信詳細の設定を行います
+  config.action_mailer.delivery_method = :smtp
+
   config.action_mailer.smtp_settings = {
     address:              'smtp.gmail.com',
     port:                  587,
