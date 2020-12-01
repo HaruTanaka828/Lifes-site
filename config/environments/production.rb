@@ -110,4 +110,6 @@ Rails.application.configure do
     enable_starttls_auto:  true
   }
 
+  GA.tracker = "G-XZTZLVWBQM"
+
 end

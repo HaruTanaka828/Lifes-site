@@ -83,6 +83,8 @@ gem 'pry-rails'
 
 gem 'dotenv-rails'
 
+gem 'google-analytics-rails'
+
 group :production do
   gem 'mysql2'
 end
