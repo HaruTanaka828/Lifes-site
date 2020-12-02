@@ -71,23 +71,19 @@ header{
 	text-decoration: none;
 }
 footer{
-	height: 18vh;
+	height: 150px;
 	background-color: rgba(255,131,0,1);
 	color:white;
 	font-size: 15px;
 }
-.footer-title{
-	margin-top: 25px;
-}
-.footer-address{
-	float: left;
+.footer-left{
+
 }
 .footer-right{
-	margin-top: 15px;
-	float: right;
+
 }
 .insta{
-	font-size: 17px;
+	font-size: 25px;
 	font-weight: bold;
 }
 
@@ -371,6 +367,12 @@ footer{
 .businesslist-text2{
 	font-size: 0px;
 }
+.smaphoonly{
+	display: none;
+}
+.footername{
+	font-size: 20px;
+}
 }
 
 @media screen and (max-width:800px) {
@@ -476,23 +478,27 @@ ul {
 
 
 
+
+
 footer{
 	text-align: center;
-	height: 180px;
+	height: 38vh;
 	background-color: rgba(255,131,0,1);
 	color:white;
 	font-size: 15px;
 }
-.footer-title{
-	margin-top: 10;
+.desktoponly{
+	display: none;
 }
-.footer-address{
-	float: none;
+.insta{
+	font-size: 18px;
+	font-weight: bold;
 }
-.footer-right{
-	font-size: 10px;
-	margin-top: 0px;
-	float: none;
+.copy{
+	font-size: 12px;
+}
+.footername{
+	font-size: 19px;
 }
 
 
