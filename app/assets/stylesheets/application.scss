@@ -107,6 +107,7 @@ footer{
 	font-size: 43px;
 	font-family: 'Nothing You Could Do', cursive;
 	font-weight: bold;
+	display: none;
 }
 .top-text{
 	margin-top: 50px;
@@ -372,6 +373,12 @@ footer{
 }
 .footername{
 	font-size: 20px;
+}
+#back {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0;
 }
 }
 
@@ -714,11 +721,19 @@ footer{
 
 
 
+
+
+#back {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+}
+#back i{
+  font-size: 50px;
+  color: rgba(0,0,0,0.5);
 }
 
 
-
-
-
-
+}
 
