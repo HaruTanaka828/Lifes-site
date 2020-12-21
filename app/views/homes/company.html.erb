@@ -95,9 +95,13 @@
 <script>
 function initMap(){
   let map = new google.maps.Map(document.getElementById('map'), {
-  center: {lat: -34.397, lng: 150.644},
-  zoom: 8
+  center: {lat: 34.69451, lng: 135.51744},
+  zoom: 16
   });
+var marker = new google.maps.Marker({
+  position: {lat: 34.69451, lng: 135.51744},
+  map: map
+});
 }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_-pq_FFUqSKV26RXr488rSdAgV3jcVZs&callback=initMap" async defer></script><br><br>
